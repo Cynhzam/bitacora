@@ -28,35 +28,20 @@ window.addEventListener("load", function(){
 	btnPublicar.addEventListener("click", function(){
 		imprimirTexto();
 	});
-		};
 	function imprimirTexto(){
 		var contenedor2 = document.createElement("div");
 		contenedor2.classList.add("contenedor");
 		body.insertBefore(contenedor2, body.children[4]);
 		var tituloImpreso = document.createElement("div");
 		tituloImpreso.classList.add("titulo-impreso");
+			tituloImpreso.innerHTML = inputTexto.value;
 		contenedor2.insertBefore(tituloImpreso,contenedor2.children[5]);
 		var textoImpreso = document.createElement("div");
 		textoImpreso.classList.add("texto-impreso");
+			textoImpreso.innerHTML = textareaTexto.value;
 		contenedor2.insertBefore(textoImpreso,contenedor2.children[6]);
 	}
+		};
 });
-		/*var postTexto = document.createElement("div");
-		postTexto.classList.add("post-texto");
-		contenedor.insertBefore(postTexto,contenedor.childNodes[0]);
-		var inputTexto = document.createElement("input");
-		inputTexto.classList.add("input-texto");
-		postTexto.insertBefore(inputTexto,postTexto.childNodes[1]);
-		var textareaTexto = document.createElement("textarea");
-		textareaTexto.classList.add("textarea-texto");
-		postTexto.insertBefore(textareaTexto,postTexto.childNodes[2]);
-		var btnCerrar = document.createElement("button");
-		btnCerrar.classList.add("btn-cerrar");
-		postTexto.insertBefore(btnCerrar, postTexto.childNodes[3]);
-		btnCerrar.textContent = "Cerrar"
-		var btnPublicar = document.createElement("button");
-		btnPublicar.classList.add("btn-publicar");
-		postTexto.insertBefore(btnPublicar, postTexto.childNodes[4]);
-		btnPublicar.textContent = "Publicar"*/
 
 	
