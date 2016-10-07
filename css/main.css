@@ -1,0 +1,16 @@
+.bitacoraIcons {
+	width: 50%;
+	cursor: pointer;
+}
+.contenedor {
+	width: 250px;
+	height: 150px;
+	background-color: black;
+	color: white;
+}
+.titulo-impreso {
+	color: white;
+}
+.texto-impreso {
+	color: white;
+}
